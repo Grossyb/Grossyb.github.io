@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<head>
+    <title>Fortnite Pro Tips</title>
+    <link rel="stylesheet" href="fortnite.css">
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script> 
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+    <header>
+            <h1>Fortnite Pro Tips</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="headquarters.html">Headquarters</a></li>
+            <li><a href="dropping.html">Dropping</a></li>
+            <li><a href="looting.html">Looting</a></li>
+            <li><a href="shooting.html">Shooting</a></li>
+            <li><a href="building.html">Building</a></li>
+            <li><a href="teamwork.html">Teamwork</a></li>
+            <li><a href="polls.html">Polls</a></li>
+        </ul>
+    </nav>
+    <div id="fortnitehero">
+    </div>
+    <main>
+    <h2>Home</h2>
+    <p>
+        This site will provide you with all the info you need to improve your Fortnite skills and become the next Ninja!
+        Navigate the links on the left to improve your skills in every aspect of the game, from dropping and looting to effectively
+        eliminating your enemies and working with others to achieve the ultimate goal - VICTORY ROYALE!
+    </p>
+    <p>
+      &nbsp
+      <a href="https://www.epicgames.com/fortnite/en-US/home">Visit Epic Game's website for Fortnite</a>
+    </p>
+    <h3>Buy Fortnite NOW!</h3>
+    <div id="paypal-button"></div>
+    <script>
+    paypal.Button.render({
+      env: 'production', // Or 'sandbox',
+
+      commit: true, // Show a 'Pay Now' button
+
+      style: {
+        color: 'gold',
+        size: 'small'
+      },
+
+      payment: function(data, actions) {
+        /*
+         * Set up the payment here
+         */
+      },
+
+      onAuthorize: function(data, actions) {
+        /*
+         * Execute the payment here
+         */
+      },
+
+      onCancel: function(data, actions) {
+        /*
+         * Buyer cancelled the payment
+         */
+      },
+
+      onError: function(err) {
+        /*
+         * An error occurred during the transaction
+         */
+      }
+    }, '#paypal-button');
+  </script>
+  &nbsp
+  &nbsp
+  &nbsp
+  <div id="contact">
+        <span class="fort"> Fortnite Pro Tips </span><br>
+        80808 Tilted Towers Road<br>
+        Tempe, AZ 9555<br><br>
+        <a id="mobile" href="tel:999-888-2122">999-888-2122</a>
+        <span id="desktop">999-888-2122</span>
+    </div>
+    </main>
+     <footer>
+                <br>Copyright © 2018 Fortnite Pro Tips<br>
+                <a href>Brandon@Grossnickle.com</a>
+    </footer>
+  </div>  
+</body>
+    
+    
+</html>

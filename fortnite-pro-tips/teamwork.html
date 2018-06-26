@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<head>
+    <title>Fortnite Pro Tips :: Teamwork</title>
+    <link rel="stylesheet" href="fortnite.css"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script> 
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+    <header>
+            <h1>Fortnite Pro Tips</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="headquarters.html">Headquarters</a></li>
+            <li><a href="dropping.html">Dropping</a></li>
+            <li><a href="looting.html">Looting</a></li>
+            <li><a href="shooting.html">Shooting</a></li>
+            <li><a href="building.html">Building</a></li>
+            <li><a href="teamwork.html">Teamwork</a></li>
+            <li><a href="polls.html">Polls</a></li>
+        </ul>
+    </nav>
+     <video width="500" height="350" controls>
+      <source src="fortnite-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <main>
+    <h2>Teamwork in Fortnite</h2>
+     <ul id="slides">
+        <li class="slide showing"><img src="teamwork.jpg" height=350 width=500></li>
+        <li class="slide"><img src="revive.png" height=350 width=500></li>
+        <li class="slide"><img src="revive2.jpg" height=350 width=500></li>
+        <li class="slide"><img src="campfire.jpg" height=350 width=500></li>
+    </ul>
+     <ul>
+        <li>Always stay near your teammates</li>
+        <li>Try your best to revive downed teammates</li>
+        <li>Communicate with teammates via microphone for better teamwork</li>
+        <li>Share weapons and heals with team members</li>
+    </ul>
+    <script>
+        var slides = document.querySelectorAll('#slides .slide');
+        var currentSlide = 0;
+        var slideInterval = setInterval(nextSlide,2000);
+        
+        function nextSlide() {
+            slides[currentSlide].className = 'slide';
+            currentSlide = (currentSlide+1)%slides.length;
+            slides[currentSlide].className = 'slide showing';
+        }
+    </script>
+    </main>
+    <footer>
+                <br>Copyright © 2018 Fortnite Pro Tips<br>
+                <a href>Brandon@Grossnickle.com</a>
+    </footer>
+    </div>
+</body>
+    
+    
+</html>
